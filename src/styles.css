@@ -1,1 +1,139 @@
-/* You can add global styles to this file, and also import other style files */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html, html a {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.header-wrapper {
+  padding: 1em 0 0 0;
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.15);
+}
+
+.header-meta {
+  padding: 0 1em 0 1.3em;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.site-title {
+  font-weight: bold;
+  font-size: 1em;
+}
+.site-title a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.content-wrapper {
+  padding: 1em;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+h2.page-title {
+  font-size: 2.5em;
+  font-weight: 400;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-wrapper {
+  padding: 1em;
+  width: 1200px;
+  margin: 0 auto;
+}
+.nav-wrapper a {
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.nav-item {
+  display: inline-block;
+  padding-right: .7em;
+}
+.nav-item:last-child {
+  padding-right: 0;
+}
+.nav-item a {
+  color: rgba(0, 0, 0, 0.6);
+  background: white;
+  transition-property: background;
+  transition-duration: .3s;
+  transition-timing-function: linear;
+  display: inline-block;
+  padding: .3em;
+  text-transform: uppercase;
+  font-size: .850em;
+  font-weight: 400;
+}
+.nav-item a.active {
+  background: rgba(220, 220, 220, 0.4);
+}
+.nav-item a:hover {
+  color: rgba(0, 0, 0, 0.9);
+  background: rgba(220, 220, 220, 0.4);
+}

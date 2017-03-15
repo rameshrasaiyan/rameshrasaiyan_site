@@ -1,0 +1,8 @@
+<ul (click)='toggleUnits()' style="cursor: pointer">
+  <li>Location: {{ currentLocation }}</li>
+  <li><canvas id="icon"></canvas></li>
+  <li>Temp: {{weatherData.temp | tempUnit: currentTempUnit | number: '.0-0'}}&deg;</li>
+  <li>Summary: {{weatherData.summary}}</li>
+  <li>Wind: {{weatherData.wind | speedUnit: currentUnitSpeed}}</li>
+  <li>Humidity: {{weatherData.humidity | percent}}</li>
+</ul>

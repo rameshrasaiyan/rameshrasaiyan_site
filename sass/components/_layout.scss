@@ -1,0 +1,29 @@
+@import "layout/extends";
+
+html, html a {
+    @extend %html;
+}
+
+body {
+    @extend %body;
+}
+
+.site-title {
+    @extend %site-title;
+}
+
+.header-wrapper {
+    @extend %header-wrapper;
+}
+
+.header-meta {
+    @extend %header-meta;
+}
+
+.content-wrapper {
+    @extend %content-wrapper;
+}
+
+h2.page-title {
+    @extend %page-title;
+}

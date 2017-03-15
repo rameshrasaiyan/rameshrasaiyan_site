@@ -1,0 +1,7 @@
+<div class="nav-wrapper">
+  <ul class="nav-items">
+    <li class="nav-item" *ngFor="let item of navItems">
+      <a [routerLink]="[item.url]" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">{{item.name}}</a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,9 @@
+@import "navigation/extends";
+
+.nav-wrapper {
+    @extend %nav-wrapper;
+}
+
+.nav-item {
+    @extend %nav-item;
+}

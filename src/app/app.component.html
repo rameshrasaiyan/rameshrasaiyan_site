@@ -1,3 +1,11 @@
-<h1>
-  {{title}}
-</h1>
+<div class="main-wrapper">
+    <header class="header-wrapper">
+        <div class="header-meta">
+            <h1 class="site-title"><a href="/">Ramesh Rasaiyan</a></h1>
+        </div>
+        <app-navigation></app-navigation>
+    </header>
+    <div class="content-wrapper">
+        <router-outlet></router-outlet>
+    </div>
+</div>
