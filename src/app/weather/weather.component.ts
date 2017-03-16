@@ -18,7 +18,7 @@ export class WeatherComponent implements OnInit {
   currentUnitSpeed = 'kph';
   currentTempUnit = 'fahrenheit';
   currentLocation = '';
-  icons = new Skycons({ 'color': '#000' });
+  icons = new Skycons({ 'color': '#C3C3C3' });
 
   constructor(private _weatherService: WeatherService) { }
 

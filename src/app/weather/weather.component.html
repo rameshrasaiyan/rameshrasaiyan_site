@@ -1,8 +1,31 @@
-<ul (click)='toggleUnits()' style="cursor: pointer">
+<!--<ul (click)='toggleUnits()' style="cursor: pointer">
   <li>Location: {{ currentLocation }}</li>
   <li><canvas id="icon"></canvas></li>
   <li>Temp: {{weatherData.temp | tempUnit: currentTempUnit | number: '.0-0'}}&deg;</li>
   <li>Summary: {{weatherData.summary}}</li>
   <li>Wind: {{weatherData.wind | speedUnit: currentUnitSpeed}}</li>
   <li>Humidity: {{weatherData.humidity | percent}}</li>
-</ul>
+</ul>-->
+
+<div class="weather-wrapper">
+  <div class="weather-content">
+    <div class="weather-location-temp">
+      <span class="weather-location">{{ currentLocation }}</span>
+      <span class="weather-temp">{{weatherData.temp | tempUnit: currentTempUnit | number: '.0-0'}}&deg;</span>
+    </div>
+    <div class="weather-icon">
+      <canvas id="icon"></canvas>
+      <div class="weather-summary">{{weatherData.summary}}</div>
+    </div>
+    <div class="weather-wind-humidity">
+      <span class="weather-wind">
+        <span class="weather-label">Wind</span>
+        {{weatherData.wind | speedUnit: currentUnitSpeed}}
+      </span>
+      <span class="weather-humidity">
+        <span class="weather-label">Humidity</span>
+        {{weatherData.humidity | percent}}
+      </span>
+    </div>
+  </div>
+</div>

@@ -137,3 +137,80 @@ h2.page-title {
   color: rgba(0, 0, 0, 0.9);
   background: rgba(220, 220, 220, 0.4);
 }
+
+.weather-wrapper {
+  background: #222222;
+  border-radius: 3px;
+  width: 250px;
+  color: #C3C3C3;
+  position: relative;
+  margin: 1em;
+  box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.35);
+}
+
+.weather-location-temp,
+.weather-wind-humidity {
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  margin-top: 2em;
+}
+
+.weather-location {
+  width: 70%;
+  display: block;
+  font-size: .900em;
+  text-transform: uppercase;
+  font-weight: 600;
+  float: left;
+  padding: 1em 0 1em 1em;
+}
+
+.weather-temp {
+  width: 17%;
+  display: block;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  float: right;
+  text-align: right;
+  padding: .8em .8em .8em 0;
+}
+
+#icon {
+  width: 250px;
+}
+
+.weather-wind {
+  width: 40%;
+  display: block;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  float: right;
+  text-align: right;
+  padding: .8em .8em .8em 0;
+}
+
+.weather-humidity {
+  width: 40%;
+  display: block;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  float: left;
+  padding: 1em 0 1em 1em;
+}
+
+.weather-summary {
+  text-align: center;
+  font-size: .900em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+span.weather-label {
+  font-size: .500em;
+  position: absolute;
+  top: 4px;
+}

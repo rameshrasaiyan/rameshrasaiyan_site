@@ -1,0 +1,34 @@
+@import 'weather/extends';
+
+.weather-wrapper {
+    @extend %weather-wrapper;
+}
+
+.weather-location-temp,
+.weather-wind-humidity {
+    @extend %weather-location-temp;
+}
+
+.weather-location {
+    @extend %weather-location;
+}
+
+#icon {
+    @extend %icon;
+}
+
+.weather-temp {
+    @extend %weather-temp;
+}
+
+.weather-wind {
+    @extend %weather-wind;
+}
+
+.weather-humidity {
+    @extend %weather-humidity;
+}
+
+.weather-summary {
+    @extend %weather-summary;
+}
